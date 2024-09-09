@@ -3,7 +3,7 @@
 
 if [ $# == 0 ]
 then
-	echo "No argmuments supplied"
+	echo "No arguments supplied"
 else
 	for i in $@
 	do
