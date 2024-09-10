@@ -1,12 +1,8 @@
-# $# : count of arguments
-# $@ : value of argumetns
-
-if [ $# == 0 ]
+if [ $# -eq 0 ]
 then
-	echo "No arguments supplied"
+    echo "No arguments supplied"
 else
-	for i in $@
-	do
-		echo "$i"
-	done
+    [ -n "$1" ] && echo "$1"
+	[ -n "$2" ] && echo "$2"
+	[ -n "$3" ] && echo "$3"
 fi
